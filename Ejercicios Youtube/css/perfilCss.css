@@ -1,0 +1,108 @@
+
+
+body{
+    background-color: aqua;
+    height: 1200px;
+}
+
+p{
+    margin: 0;
+}
+
+.tarjeta{
+    position: relative;
+    margin-top: 15%;
+    height: 40%;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;    
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.caja1{
+    position: relative; /* padre relative*/   
+    height: 25%;
+    z-index: 10;
+}
+
+.caja1 .headerFondo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.caja1 .headerPerfil{
+    position: absolute; /*hijo absolute*/
+    width: 20%; /* ancho elegido */
+    height:50%; /* alto elegido*/
+    top: 75%;
+    left: 40%; /* (100% - ancho) / 2 = left */
+    border-radius: 50%;
+    border: 2px solid white;
+    box-sizing: border-box;  
+}
+/*Para centrar un contenedor se requiere de un padre relative y un hijo absolute*/
+
+.caja2{
+    position: relative; /* padre relative*/
+    height: 45%;
+    background-color: whitesmoke;
+}
+
+.caja2 .nombre {
+    position: absolute; /*hijo absolute*/
+    width: 50%; /* ancho elegido */
+    height: 20%; /* alto elegido*/
+    /* calculo para centrar el contenedor */
+    top:40%; /* (100% - alto) / 2 = top */
+    left: 25%; /* (100% - ancho) / 2 = left */
+    background-color: rgb(42, 165, 58);
+    text-align: center;
+}
+
+.caja3{
+    position: relative; /* padre relative*/
+    height: 30%;
+    background-color: ghostwhite;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    border-top: 2px solid rgb(170, 167, 167);
+}
+
+.caja3 .numeros{    
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    background-color: brown;
+}
+
+.caja3 .subcaja3{
+    position: absolute; /*hijo absolute*/
+    width: 100%;
+    height: 40%;
+    top:30%; /* (100% - alto) / 2 = top */
+    background-color: rgb(203, 125, 255);
+}
+
+.grey{
+    color: grey;
+}
+
+h3, p {
+    font-family: sans-serif;
+}
+
+h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+p{
+    font-size: 1rem;
+}

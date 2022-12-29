@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.cards{
+    width: 90%;
+    height: 500px;
+    margin: 200px auto;
+    font-size: 0; /*quitar margen entre las columnas (parte1)*/
+}
+
+.card{
+    position: relative;
+    display: inline-block;
+    vertical-align: top; /* sino lo uso el primero se baja un poco, por tener menos renglones que los demas*/
+    width: 250px;
+    height: 100%;
+    padding-top: 3em;
+    padding-left: 2em;
+    padding-right: 1.5em;
+    text-align: left;
+    font-size: 1rem; /*quitar margen entre las columnas (parte2)*/
+    color: hsl(0, 0%, 100% / 0.75);
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+}
+
+.card_desc{
+    /*border: 2px solid black;*/
+}
+
+.card-title{
+    font-family: "Sansita", sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.card-orange{    
+    background-color: hsl(31, 77%, 55%);
+}
+.card-orange .card_cta{
+    color: hsl(31, 77%, 55%);
+}
+.card-cyan{    
+    background-color: hsl(176, 60%, 45%);
+}
+.card-cyan .card_cta{    
+    color: hsl(176, 60%, 45%);
+}
+.card-dark-cyan{    
+    background-color: hsl(180, 80%, 30%);
+}
+.card-dark-cyan .card_cta{    
+    color: hsl(180, 80%, 30%);
+}
+
+
+.card_cta{
+    position: absolute;
+    bottom: 50px;
+    padding: 0.7em 2em;
+    background-color: hsl(0, 5%, 90%);
+    border-radius: 1.2em;
+    text-decoration: none;
+}

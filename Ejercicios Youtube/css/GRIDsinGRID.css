@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #333;
+    font-weight: 500;
+}
+
+.grid_container{
+    position: relative;
+    width: 1400px;
+    margin: 3rem auto;
+}
+
+.card{
+    position: relative;
+    display: inline-block;
+    height: 400px;
+    vertical-align: top;
+    background-color: aliceblue;
+    margin-right: 1.5em;
+    padding: 2em;
+    line-height: 1.5;
+    border-radius: 1rem;
+}
+
+.card_quotes{
+    position: absolute;
+    top: 4em;
+    right: 10em;
+    width: 100px;
+    height: 100px;
+}
+
+.card_text{
+    opacity: 0.7;
+}
+/*tamaño tarjetas*/
+.card_first{
+    width: 675px;
+}
+
+.card_second{
+    width: 350px;
+}
+
+.card_third{
+    width: 300px;
+    margin-right: 0;
+    height: 825px;
+}
+
+.card_fourth,
+.card_fifth{
+    position: absolute;
+    top:425px;
+}
+
+.card_fourth{
+    left: 0;
+    width: 325px;
+}
+
+.card_fifth{
+    left: 355px;
+    width: 700px;
+}
+.card_purple,
+.card_grey,
+.card_black{
+    color: #fff;
+}
+
+.card_title{
+    position: relative;
+}
+/*color tarjetas*/
+.card_purple{
+    background-color: hsl(263, 55%, 52%);
+}
+
+.card_grey{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.card_black{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.card_white{
+    background-color: #fff;
+    color: #000;
+}
+/*contenido tarjetas*/
+.user{
+    width: 250px;
+}
+
+.user_image{
+    max-width: 25%;
+    border-radius: 50%;
+}
+
+.user_image,
+.user_info{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user_name,
+.user_category{
+
+}

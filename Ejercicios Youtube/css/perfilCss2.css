@@ -1,0 +1,130 @@
+
+body{
+    background-color: aqua;
+    height: 600px;
+}
+
+p{
+    margin: 0;
+}
+.cajas{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caja1{
+    margin-top: 15%;
+    height: 20%;
+    background-color: aquamarine;
+}
+
+.caja2{
+    height: 20%;
+    background-color: whitesmoke;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.caja2 cajas {
+    align-items: center;
+
+  }
+
+.caja3{
+    height: 40%;
+    background-color: ghostwhite;
+    text-align: center;
+}
+
+.caja2 span{
+    color: grey;
+}
+
+.caja3 p{
+    color: grey;
+}
+
+.caja3 .numeros{    
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+body{
+    background-color: aqua;
+    font-family: sans-serif;
+}
+
+.tarjeta{
+    position: relative;
+    top: 30vh;
+    width: 400px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    overflow:hidden;
+}
+
+.tarjeta .header{
+    position: relative;
+    height: 120px;
+    text-align: center;
+}
+
+.headerFondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.headerPerfil{
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.tarjeta .body{
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-bottom: 3px solid rgb(216, 216, 216);
+}
+
+.tarjeta .texto{
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.tarjeta .texto-light{
+    color: rgb(112, 112, 112);
+}
+
+.tarjeta .bottom{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.tarjeta .bottom .estados{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.numeros{
+    margin-bottom: 0.5em;
+    font-size: 1.8rem;
+}

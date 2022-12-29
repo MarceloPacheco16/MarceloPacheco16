@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.perfil{
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 500px;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
+
+header{
+    font-family: cursive;
+}
+
+aside{
+    background-color: hsl(208, 22%, 34%);
+    color: hsl(0, 0%, 100%);
+}
+
+main{
+    color: hsl(0, 0%, 25%);
+}

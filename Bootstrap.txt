@@ -1,0 +1,29 @@
+Learn the fundamentals of implementing responsive web design. 
+How to use Balsamiq to mockup and wireframe websites. 
+The fundamentals of UI design for websites. 
+How to install the Bootstrap framework. 
+Understanding the Bootstrap grid layout system. 
+How to use bootstrap containers to layout your website easily. 
+Learn to use other Bootstrap components such as buttons. 
+Adding symbols using Font Awesome. Learn to use Bootstrap carousels. 
+Add Bootstrap cards to your website. Using Bootstrap navigation bars.
+
+Aprenda los fundamentos de la implementación del diseño web receptivo.
+
+Cómo usar Balsamiq para maquetar y estructurar sitios web.
+
+Los fundamentos del diseño de UI para sitios web.
+
+Cómo instalar el marco Bootstrap.
+
+Comprender el sistema de diseño de cuadrícula de Bootstrap.
+
+Cómo usar contenedores de arranque para diseñar su sitio web fácilmente.
+
+Aprenda a usar otros componentes de Bootstrap, como los botones.
+
+Agregar símbolos usando Font Awesome. 
+Aprende a usar carruseles de Bootstrap.
+
+Agregue tarjetas Bootstrap a su sitio web. 
+Usando las barras de navegación de Bootstrap.

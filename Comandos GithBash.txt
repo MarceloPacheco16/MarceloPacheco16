@@ -1,0 +1,88 @@
+Git Bash
+
+subir: lf
+descargar: cr lf true
+ubicacion: cd (ruta. ej: d:/Pagina_Web)
+salir de carpeta: cd ..
+ver archivos: ls
+nueva carpeta: mkdir (nombre)
+
+git add: para pasar a stage, si se modifico para reemplazarlo usarlo
+git commit: de stage a commit(repositorios)
+git push: de commit a server
+
+git status: estado actual del repositorio(los archivos no seguidos, en stage,
+modificados)
+git status -s:estado actual de forma corta
+	M(rojo): archivo modificado
+	M(verde): agregado a stage
+	??: no esta en stage(en seguimiento)
+	A: agregado a stage
+
+-Untruckted Files: archivos que git no esta siguiendo
+git add (archivo.ext, .txt agregar todos los .txt, . agregar todos)
+
+Comprometer
+git commit -m "(mensaje con sentido)"
+git commit -> en vsc: (mensaje con sentido) -> guardar y cerrar vsc
+
+Borrar
+rm (archivo)
+git add	(archivo)	(para agregar la "modificacion")
+git commit -m "(mensaje)"
+O
+git rm (archivo)
+
+git restore --staged (archivo)	(sacar cambios de la etapa stage)
+
+git restore (archivo) (recuperamos archivo antes de commit)
+
+Cambiar Nombre
+mv (archivo actual) (archivo nuevo)	(cambiar nombre) ->
+ git add (archivo actual) (archivo nuevo)
+ git commit -m "renombrando archivo"
+O
+git mv (archivo actual) (archivo nuevo)
+ git commit -m "renombrando archivo"
+
+Ignorar archivos
+crear archivo (.gitignore en vsc)
+agregar la ruta de archivos o carpetas que no quisieramos que esten en stage o commit
+git add .gitignore
+git commit -m "agregando archivo gitignore"
+
+Diferencia de Archivo al modificarlo
+git diff: cambios hechos antes de la etapa stage
+git diff --staged: cambios en etapa stage
+
+cat (archivo): muestra contenido de archivo
+
+Historial
+git log --oneline: muestra MENSAJES agregados en los COMMIT
+
+BRUNCH
+git brunch: muestra la rama donde trabajamos y las existentes
+git checkout -b (nombre nueva rama): cambiar a una rama nueva
+git checkout (nombre rama existente)
+LLEVAR ARCHIVOS DE UNA RAMA A RAMA MAIN
+git merge (nombre rama secundaria)
+
+Crear repositorio
+github.com
+Repositorios -> New
+Nombre - descripcion(opcional)-> crear repositorio
+Copiar
+git remote add origin (copiar linea de codigo)
+git push -u origin main
+Pegar en GitBash
+-nombre de usuario
+-contraseña (se encuentra en Foto de Perfil -> Settings -> Developer Settings
+-> Personal Access Tokens -> Generat new token)
+-nombre de token
+-expiracion
+marcar todas las opciones del repositorio -> Generate Token
+Copiar token y Pegar en contraseña
+
+Subir rama secundaria a repositorio
+git checkout -b (nombre de rama nueva)
+git push -u origin (nombre de rama)
