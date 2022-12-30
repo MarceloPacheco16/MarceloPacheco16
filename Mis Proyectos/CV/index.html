@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <!-- Google Material Icons-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet">
 
     <!-- Mi CSS -->
@@ -16,102 +16,142 @@
 </head>
 <body>
     
-    <header>
-        <div class="perfil">
-            <img src="imagenes/Foto CV.jpg">
-        </div>
-        <div class="descripcion">
-            <h1>Marcelo Roni Pacheco Condori</h1>
-            <h4>ESTUDIANTE TEC. SUP. EN ANALISTA EN SISTEMAS</h4>
-            <p><span class="material-icons-outlined">calendar_month</span> Fecha de Nacimiento: 16/05/1999</p>
-            <p><span class="material-icons-outlined">phone_android</span> 11 3870 7395 / 11 41497760</p>
-            <p><span class="material-icons-outlined">email</span>marcelop639@gmail.com</p>
-            <P><span class="material-icons-outlined">location_on</span> Abraham J. Luppi, Nueva Pompeya, CABA</P>
-            <p>  linkedin.com/in/marcelo-pacheco-condori</p>
-        </div>
-    </header>
-
-    <main>
-        <h2>EXPERIENCIA</h2>
-
-        <h3>Reparación y Mantenimiento de PC / (Corporación BA Sur - Pasantía)</h3>
-        <p><strong>09/2017 - 11/2017 (52hs Cursadas)</strong></p>
-        <p>Inventario de los equipos de computación en todas las áreas.</p>
-        <p>Desarmado de PCs que no sirven, así recuperando las partes funcionales para armar nuevas.</p>
-
-        <h2>EDUCACIÓN COMPLEMENTARIA</h2>
-
-        <h3>PROGRAMA EMPUJAR - FUNDACIÓN PLÉROMA</h3>
-        <p><strong>09/2022 - 12/2022 (160hs Cursando)</strong></p>
-        <p>Desarrollo de competencias laborales, habilidades socio emocionales y autoconocimiento.</p>
-        <p>Entrenamiento laboral: Elaboración de un proyecto empresarial en equipo con el asesoramiento 
-            de profesionales de empresas en el área de Administración en el rol de Líder.
-        </p>
-
-        <h3>Desarrollador de Web Front-End Jr  / Aprende Programando</h3>
-        <p><strong>04/2017 - 07/2017 (68hs Cursadas)</strong></p>
-        <p>Conocí HTML y CSS, realizando una pagina personal con nuestro recorrido. Y con JAVASCRIPT conocimientos básicos.</p>
-
-        <h3>Diseñador Gráfico / Programa Adolescencia</h3>
-        <p><strong>04/2015 - 11/2015 (84hs Cursadas)</strong></p>
-        <p>Use Photoshop e Illustraitor para realizar distintas logos y banners con elementos que me proporcionaban. 
-            Junto con actividades como maquetas o dibujos abstractos.
-        </p>
+    <div class="contenedor">      
         
-    </main>
+        <div class="izquierda">
 
-    <aside>
+            <div class="foto">
+                <img src="imagenes/Foto CV.jpg">
+            </div>
 
-        <h2>EDUCACIÓN</h2>
-
-        <h3><strong>IFTS Nº11 - TÉCNICO SUPERIOR EN ANÁLISIS DE SISTEMAS</strong></h3>
-        <p>2022 - en Curso</p>
-
-        <h3><strong>ESC TEC Nº7 DOLORES LAVALLE DE LAVALLE - TÉCNICO EN COMPUTACIÓN</strong></h3>
-        <p>Finalizado en 2019</p>
-
-        <h2>OBJETIVO LABORAL</h2>
-
-        <p>Mi objetivo en una empresa es ir adquiriendo nuevos conocimientos, para poder aplicarlos, 
-        y mejorar en las áreas que yo me estoy desarrollando. Así poder crear proyectos propios, con gente 
-        que también comparta esos objetivos.</p>
-
-        <h2>SOBRE MI</h2>
-
-        <p>Soy una persona que le gusta trabajar en equipo, soy empático y optimista. 
-        Mis intereses van hacia la programación, la mejora de mi ingles, y 
-        busco mantenerme en forma física y mentalmente.</p>
-
-        <h2>HABILIDADES</h2>
-
-        <p>C# .NET</p>
-        <p>MySQL (con XAMPP)</p>
-        <p>HTML & CSS</p>
-        <p>Word, Excel, Power Point</p>
-        <p>Photoshop</p>
-
-        <div class="barra-fondo1">
-            <div class="porcentaje1"></div>
+            <section id="educacion" class="seccion">
+                <h2>EDUCACIÓN</h2>
+    
+                <h3>IFTS Nº11 - TÉCNICO SUPERIOR EN ANÁLISIS DE SISTEMAS</h3>
+                <p>2022 - en Curso</p>
+    
+                <h3>ESC TEC Nº7 DOLORES LAVALLE DE LAVALLE - TÉCNICO EN COMPUTACIÓN</h3>
+                <p>Finalizado en 2019</p>
+            </section>
+            <section id="objetivo" class="seccion">
+                <h2>OBJETIVO LABORAL</h2>
+    
+                <p>Mi objetivo en una empresa es ir adquiriendo nuevos conocimientos, para poder aplicarlos, 
+                y mejorar en las áreas que yo me estoy desarrollando. Así poder crear proyectos propios, con gente 
+                que también comparta esos objetivos.</p>
+            </section>
+    
+            <section id="sobre_mi" class="seccion">
+                <h2>SOBRE MI</h2>
+    
+                <p>Soy una persona que le gusta trabajar en equipo, soy empático y optimista. 
+                Mis intereses van hacia la programación, la mejora de mi ingles, y 
+                busco mantenerme en forma física y mentalmente.</p>
+            </section>
+    
+            <section id="habilidades" class="seccion">
+                <h2>HABILIDADES</h2>
+                
+                <p>C# .NET</p>               
+                <div class="caja">
+                    <div class="barra_fondo">
+                        <div class="porcentaje1 porcentajes"></div>
+                    </div>
+                    <p class="cantidad">50%</p>
+                </div>
+                
+                <p>MySQL (con XAMPP)</p>
+                <div class="caja">
+                    <div class="barra_fondo">
+                        <div class="porcentaje2 porcentajes"></div>
+                    </div>
+                    <p class="cantidad">30%</p>
+                </div>
+    
+                <p>HTML & CSS</p>
+                <div class="caja">
+                    <div class="barra_fondo">
+                        <div class="porcentaje3 porcentajes"></div>
+                    </div>        
+                    <p class="cantidad">40%</p>
+                </div>
+    
+                <p>Word, Excel, Power Point</p>
+                <div class="caja">
+                    <div class="barra_fondo">
+                        <div class="porcentaje4 porcentajes"></div>
+                    </div>
+                    <p class="cantidad">40%</p>
+        
+                </div>
+    
+                <p>Photoshop</p>
+                <div class="caja">
+                    <div class="barra_fondo">
+                        <div class="porcentaje5 porcentajes"></div>
+                    </div>
+                    <p class="cantidad">30%</p>
+                </div>               
+    
+            </section>
+    
         </div>
-        <p>50%</p>
-        <div class="barra-fondo2">
-            <div class="porcentaje2"></div>
-        </div>
-        <p>30%</p>
-        <div class="barra-fondo3">
-            <div class="porcentaje3"></div>
+            
+        <div class="derecha">
+            <section id="perfil" class="seccion">
+                <!--<img src="imagenes/Foto CV.jpg">-->
+                <h1>MARCELO RONI PACHECO CONDORI</h1>
+                <h4>ESTUDIANTE TEC. SUP. EN ANALISTA EN SISTEMAS</h4>
+                <div class="datos_personales">
+                    <span class="material-icons-outlined">calendar_month</span><p>Fecha de Nacimiento: 16/05/1999</p>
+                </div>
+                <div class="datos_personales">
+                    <span class="material-icons-outlined">phone_android</span><p>11 3870 7395 / 11 41497760</p>
+                </div>
+                <div class="datos_personales">
+                    <span class="material-icons-outlined">email</span><p>marcelop639@gmail.com</p>
+                </div>
+                <div class="datos_personales">
+                    <span class="material-icons-outlined">location_on</span><p>Abraham J. Luppi, Nueva Pompeya, CABA</p>
+                </div>
+                <div class="datos_personales">                    
+                    <img src="Imagenes/LinkedIn.png" alt="in" class="linkedin">
+                    <p class="in">linkedin.com/in/marcelo-pacheco-condori</p>
+                </div>
+            </section>    
+        
+            <section id="experiencia" class="seccion">
+                <h2>EXPERIENCIA</h2>
+    
+                <h3>Reparación y Mantenimiento de PC / (Corporación BA Sur - Pasantía)</h3>
+                <p><strong>09/2017 - 11/2017 (52hs Cursadas)</strong></p>
+                <p>Inventario de los equipos de computación en todas las áreas.</p>
+                <p>Desarmado de PCs que no sirven, así recuperando las partes funcionales para armar nuevas.</p>
+            </section>
+    
+            <section id="complementaria" class="seccion">
+                <h2>EDUCACIÓN COMPLEMENTARIA</h2>
+    
+                <h3>PROGRAMA EMPUJAR - FUNDACIÓN PLÉROMA</h3>
+                <p><strong>09/2022 - 12/2022 (160hs Cursando)</strong></p>
+                <p>Desarrollo de competencias laborales, habilidades socio emocionales y autoconocimiento.</p>
+                <p>Entrenamiento laboral: Elaboración de un proyecto empresarial en equipo con el asesoramiento 
+                    de profesionales de empresas en el área de Administración en el rol de Líder.
+                </p>
+    
+                <h3>Desarrollador de Web Front-End Jr  / Aprende Programando</h3>
+                <p><strong>04/2017 - 07/2017 (68hs Cursadas)</strong></p>
+                <p>Conocí HTML y CSS, realizando una pagina personal con nuestro recorrido. Y con JAVASCRIPT conocimientos básicos.</p>
+    
+                <h3>Diseñador Gráfico / Programa Adolescencia</h3>
+                <p><strong>04/2015 - 11/2015 (84hs Cursadas)</strong></p>
+                <p>Use Photoshop e Illustraitor para realizar distintas logos y banners con elementos que me proporcionaban. 
+                    Junto con actividades como maquetas o dibujos abstractos.
+                </p>        
+            </section>
         </div>        
-        <p>40%</p>
-        <div class="barra-fondo4">
-            <div class="porcentaje4"></div>
-        </div>
-        <p>40%</p>
-        <div class="barra-fondo5">
-            <div class="porcentaje5"></div>
-        </div>
-        <p>30%</p>
 
-    </aside>
+    </div>    
     
 </body>
 </html>

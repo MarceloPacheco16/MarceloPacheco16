@@ -3,28 +3,145 @@
 }
 
 body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 0;
     font-family: sans-serif;
+    background-color: hsl(228, 14%, 93%);
 }
 
-.perfil{
-    border: 1px solid black;
-    overflow: hidden;
-    border-radius: 500px;
-}
-img{
-    width: 500px;
-    height: 500px;
+/*Contenedores Generales*/
+.contenedor{
+    display: flex;
+
+    width: 60%;
+    background-color: hsl(0, 0%, 100%);
 }
 
-header{
-    font-family: cursive;
+.izquierda, .derecha{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-aside{
+.izquierda{
+    flex-shrink: 1.2;
+
     background-color: hsl(208, 22%, 34%);
     color: hsl(0, 0%, 100%);
 }
+/*-----------------------*/
 
-main{
+.derecha{
+    flex-shrink: 1;
+
     color: hsl(0, 0%, 25%);
+}
+/*Fuentes*/
+h1{
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+h2{
+    border-bottom: 4px solid hsl(208, 22%, 34%);
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.izquierda h2{
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+.seccion > p{
+    text-align: justify;
+}
+/*--------------------------*/
+
+/* Foto*/
+.foto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 15px;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+.foto > img{
+    max-width: 40%;
+    border-radius: 50%;
+}
+/*--------------*/
+
+/*Perfil datos personales*/
+#perfil > .datos_personales{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.datos_personales > p{
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+/*-------------------------*/
+/* Perfil LinkedIn*/
+#perfil > .datos_personales > img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+#perfil > .in{
+    display: inline-block;
+}
+/*--------------*/
+
+/*HABILIDADES (barras)*/
+#habilidades > p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.barra_fondo{
+    display: inline-block;
+    width: 80%;
+    height: 20px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50px;
+}
+
+#habilidades .cantidad{
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.porcentajes{
+    height: 100%;
+    background-color: hsl(216, 42%, 56%);
+    border-radius: 50px;
+}
+
+/*se pone 10% +*/
+.porcentaje1{
+    width: 60%;
+}
+.porcentaje2{
+    width: 40%;
+}
+.porcentaje3{
+    width: 50%;
+}
+.porcentaje4{
+    width: 50%;
+}
+.porcentaje5{
+    width: 40%;
 }

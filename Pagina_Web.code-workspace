@@ -7,5 +7,7 @@
 			"path": "C:\\Users\\user\\Desktop\\IFTS\\2022\\Diagramación Logica\\myfirstapp"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Pagina_Web"
+	}
 }
