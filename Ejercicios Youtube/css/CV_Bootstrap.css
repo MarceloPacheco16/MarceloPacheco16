@@ -1,0 +1,144 @@
+/*Barra de Navegción*/
+.navbar{
+    padding:2rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+/*Ocultar icono al collapsar el menu*/
+@media screen and (max-width:767px) {
+    .navbar-brand{ 
+        display: none;
+    }
+}
+
+/*Estilos Generales*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;    
+}
+
+.seccion-oscura{
+    background-color: #1b1b32;
+    color: white;
+}
+
+.seccion-clara{
+    color: black;
+    background-color: white;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;    
+    font-family: "Poppins", cursive;
+    font-weight: 400;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+/*Sección Hero*/
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px; /* permitimos que se estire todo lo que pueda*/
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-imagen-desarrollador{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* o sino .rounded-circle como clase*/
+    margin: 20px;
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+    font-family: "Poppins", cursive;
+    font-weight: 400;
+}
+
+/*Cuando la pantalla tenga un ancho de 700 o mas, la imagen tendra un maximo de 600px*/
+@media screen and (min-width:700px) {
+    .hero-inferior .hero-inferior-imagen{
+        max-width: 600px;
+    }
+}
+
+/* Sección Sobre Mi*/
+.sobre-mi{
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+
+}
+
+/* Seccion Experiencia */
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .row div{
+    height: 250px;
+    background-color: purple;
+    border: 3px solid orange;
+}
+
+.exoeriencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+/* Personalizamos el Icono */
+.experiencia i{
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.badges-contenedor{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+.experiencia .columna{
+    padding:20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in; /* Ocurre una TRANSICION */
+}
+/*Que sucede en la TRANSICION*/
+.experiencia .columna:hover{
+    color: white;
+    background-color: #1b1b32;
+}

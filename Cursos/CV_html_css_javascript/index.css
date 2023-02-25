@@ -1,0 +1,183 @@
+
+/* CONTENEDOR GENERAL */
+
+#contenedor,
+nav ul{
+    width: 900px;
+}
+
+#contenedor{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    background-color:rgb(100, 149, 237);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    border-radius: 2px;
+}
+
+#contenedor .titulo h2:first-child{
+    padding-top: 0;
+}
+
+#contenedor .titulo:last-child{
+    margin-bottom: 0;
+}
+
+/* ESTILOS GLOBALES */
+
+.titulo{
+    background-color: rgb(167, 211, 243);    
+    margin:0 40px 0px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.titulo h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    border-bottom: 3px solid black;
+    background-color:rgb(100, 149, 237);
+    box-shadow: 0 -40px 0 30px rgb(100, 149, 237);
+}
+
+img{
+    width: 150px;
+    height: 160px;
+    margin: 20px;
+    border-radius: 30%;
+    border: 4px solid rgb(255, 248, 248);
+    box-shadow: inset 10px 10px 0 0 rgb(255, 248, 248);
+}
+
+.titulo ul,
+nav ul{
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.row{
+    text-align: center;
+}
+
+.titulo .row div{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.display_none{
+    display: none;
+}
+
+/* BREAKPOINTS*/
+
+@media screen and (max-width:1000px) {
+
+    #contenedor,
+    #contenedor nav ul {
+        width: 650px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+
+    #contenedor,
+    #contenedor nav ul {
+        width: 380px;
+    }
+    
+}
+
+/*BARRA DE NAVEGACION*/
+
+nav ul{
+    position: fixed;
+    background-color: aliceblue;
+    border:2px solid black;
+    border-radius: 5px;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 10px;
+}
+
+nav ul li,
+nav button{
+    display: inline-block;    
+    font-weight: 500;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav button{
+    padding: 4px 8px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+nav button:hover{
+    background-color: rgb(178, 255, 255);
+}
+
+/*PERFIL*/
+
+#perfil h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* CONTACTO */
+
+#contacto ul li{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* SOBRE MI */
+#sobre_mi p{
+    font-weight: 500;
+}
+
+/* EDUCACION */
+#educacion p:first-of-type{
+    font-weight: 600;
+}
+
+/* OBJETIVO LABORAL */
+#objetivo p{
+    font-weight: 500;
+}
+
+/* EXPERIENCIAS */
+
+#experiencias .btn{
+    margin-bottom: 10px;
+    font-weight: 500;
+    border: 2px solid black;
+    background-color: white;
+}
+
+#experiencias .btn:hover{
+    background-color: rgb(178, 255, 255);
+}
+/*HABILIDADES*/
+
+#habilidades ul{
+    gap:10px;
+}
+#habilidades .badge{
+    font-size: 1rem;
+}

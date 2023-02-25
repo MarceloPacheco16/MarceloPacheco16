@@ -1,0 +1,280 @@
+/* EN  --> ESTE PROYECTO <-- AYUDO MARGIN=0 Y PADDING=0 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*CONTENEDOR GENERAL*/
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    position:relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+
+    background-color: #fff;
+    box-shadow: 0px 35px 55px rgba(0, 0, 0, 0.1);
+}
+/*CONTENEDOR IZQUIERDO*/
+.contenedor .lado_izquierdo{
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+/*FOTO*/
+.perfil{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.perfil .foto{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.perfil .foto img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*ENMARCO LA IMAGEN MUY BIEN*/
+}
+/*CONTACTO*/
+.perfil h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height:  1.4em;
+}
+
+.perfil h2 span{    
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.contacto_info{
+    padding-top: 40px;    
+}
+
+.titulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contacto_info ul{
+    position: relative;
+}
+
+.contacto_info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;/*CAMBIA A PUNTERO*/
+}
+
+.contacto_info ul li .icono{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contacto_info ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+/*EDUCACION*/
+.contacto_info .educacion li{ /*.contacto_info .educacion li*/
+    margin-bottom: 15px;
+}
+
+.educacion h5{ /*.contacto_info .educacion h5*/
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.educacion h4:nth-child(2){ /*.contacto_info .educacion h4*/
+    color: #fff;
+    font-weight: 300;
+}
+
+.educacion h4{ /*.contacto_info .educacion h4*/
+    color: #fff;
+    font-weight: 500;
+}
+
+/*HABILIDADES*/
+.contacto_info.habilidades .porcentaje{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 6px;
+    margin-top: 5px;
+    background-color: #081921;
+}
+
+.contacto_info.habilidades div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+
+/*--------------------------------------------------------*/
+
+/*CONTENEDOR DERECHO*/
+.contenedor .lado_derecho{
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+
+/*OBJETIVOS*/
+.objetivos{
+    margin-bottom: 50px;
+}
+
+.objetivos:last-child{
+    margin-bottom: 0;
+}
+
+.titulo2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #333; /*NO NOTO CAMBIOS*/
+}
+
+.objetivos .box{
+    display: flex;
+    flex-direction: row;
+
+    margin: 20px 0;
+}
+
+.objetivos .box .compania_anio{
+    min-width: 150px;
+}
+
+.objetivos .box .compania_anio h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.objetivos .texto h4{
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+ /*HABILIDADES PROFESIONALES*/
+
+.habilidades_prof .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr; /*MISMO TAMAÑO .compania_anio MIN-WIDTH:150PX*/
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades_prof .box h4{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.habilidades_prof .box .porcentaje{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+}
+
+.habilidades_prof .box .porcentaje div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+
+/*INTERESES*/
+.intereses ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.intereses ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.intereses ul li .fa{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1000px){
+
+    .contenedor{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .intereses ul{        
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:600px){
+
+    .objetivos .box{
+        flex-direction: column;
+    }
+    .objetivos .box .compania_anio{
+        margin-bottom: 5px;
+    }
+    .intereses ul{        
+        grid-template-columns: repeat(1,1fr);
+    }
+    .habilidades_prof .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
