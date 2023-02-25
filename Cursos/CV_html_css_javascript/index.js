@@ -48,13 +48,13 @@ const items=document.getElementsByClassName("item");
 
 menu.addEventListener("click", function(){
     if(boolean == false){
-        for(i=0; i<7; i++){            
+        for(i=0; i<items.length; i++){            
             items[i].classList.remove("display_none");
         }
      
         boolean = true;
     }else{
-        for(i=0; i<7; i++){            
+        for(i=0; i<items.length; i++){            
             items[i].classList.add("display_none");
         }
      

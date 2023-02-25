@@ -34,6 +34,7 @@
                 <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#educacion">Educación</a></button></li>
                 <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#objetivo">Objetivo</a></button></li>
                 <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#experiencias">Experiencias</a></button></li>
+                <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#cursos">Cursos</a></button></li>
                 <li class="item display_none"><button type="button" onclick="ocultar()"><a href="#habilidades">Habilidades</a></button></li>
 
             </ul>
@@ -49,11 +50,12 @@
 
         <div id="contacto" class="titulo">
             <h2>CONTACTO</h2>
+
             <ul>
-                <li>POMPEYA, CABA</li>
-                <li>114576-5482</li>
-                <li>marcheco@gmail.com</li>
-                <li>linkedin.com/in/marcelo-pacheco</li>
+                <li><i class="bi bi-geo-alt-fill"></i> POMPEYA, CABA</li>
+                <li><i class="bi bi-phone-fill"></i> 114576-5482</li>
+                <li><i class="bi bi-envelope-at-fill"></i> marcheco@gmail.com</li>
+                <li><i class="bi bi-linkedin"></i> linkedin.com/in/marcelo-pacheco</li>
             </ul>
         </div>
 
@@ -70,14 +72,15 @@
 
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h3>Esc. Tec. Nº7</h3>
-                    <p>Tecnico en Computación</p>
-                    <p><strong>2018 - 2018</strong></p>
-                </div>
-                <div class="col-12 col-md-6">
                     <h3>IFTS Nº11</h3>
                     <p>Analista en Sistemas</p>
-                    <p><strong>2018 - 2018</strong></p>
+                    <p><strong>2022 en Curso</strong></p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <h3>Esc. Tec. Nº7</h3>
+                    <p>Tecnico en Computación</p>
+                    <p><strong>Finalizado en 2018</strong></p>
                 </div>
             </div>
             
@@ -96,16 +99,51 @@
 
             <div class="row">
                 <div class="col-12 col-md-6 ">
-                    <h3>Pasantia</h3>
-                    <p><strong>2018 - 2018</strong></p>
-                    <p class="descripcion display_none">Inventario de los equipos de computación y reparacion de PC's.</p>
+                    <h3>Diseño Grafico</h3>
+                    <p><strong>03/2019 - 12/2019</strong></p>
+                    <p class="descripcion display_none">Creación de Logos, Banners y Posters con el uso de Photoshop.</p>
                     <button type="button" class="btn" onclick="descripcion(0)">Mostrar</button>
                 </div>
+
                 <div class="col-12 col-md-6 ">
-                    <h3>Diseño Grafico</h3>
-                    <p><strong>2019 - 2019</strong></p>
-                    <p class="descripcion display_none">Creación de Logos, Banners y Posters con el uso de Photoshop.</p>
+                    <h3>Pasantia</h3>
+                    <p><strong>09/2018 - 11/2018</strong></p>
+                    <p class="descripcion display_none">Inventario de los equipos de computación y reparacion de PC's.</p>
                     <button type="button" class="btn" onclick="descripcion(1)">Mostrar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="cursos" class="conteiner titulo">            
+            <h2>CURSOS</h2>
+
+            <div class="row">
+                <div class="col-12 col-md-6 ">
+                    <h3>Curso de FrontEnd Javascript</h3>
+                    <p><strong>12/2022 - 03/2023</strong></p>
+                    <p class="descripcion display_none">Repaso de los conocimientos basicos de HTML y CSS, luego aprendi como usar los breakpoints, 
+                        media queries, manejar BOOTSTRAP, y crear repositorio en Git Hub. Tambien con JavaScript aprendiendo a usar Eventos en el HTML, y 
+                        la manera en la que encarar un proyecto web, y la lógica de negocio en paginas web.
+                    </p>
+                    <button type="button" class="btn" onclick="descripcion(2)">Mostrar</button>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <h3>PROGRAMA EMPUJAR</h3>
+                    <p><strong>09/2022 - 12/2022</strong></p>
+                    <p class="descripcion display_none">Desarrollo de competencias laborales, habilidades socio emocionales y autoconocimiento.
+                        Elaboración de un proyecto empresarial en equipo con el asesoramiento de profesionales 
+                        de empresas en el área de Administración en el rol de Líder.
+                    </p>
+                    <button type="button" class="btn" onclick="descripcion(3)">Mostrar</button>
+                </div>
+
+                <div class="col-12 col-md-6 ">
+                    <h3>Desarrollador de Web Front-End Jr</h3>
+                    <p><strong>04/2017 - 07/2017</strong></p>
+                    <p class="descripcion display_none">Conocí HTML y CSS, realizando una pagina personal con nuestro recorrido. Y con JAVASCRIPT conocimientos básicos.</p>
+                    <button type="button" class="btn" onclick="descripcion(4)">Mostrar</button>
                 </div>
             </div>
 
@@ -113,7 +151,8 @@
 
         <div id="habilidades" class="titulo">
             <h2>HABILIDADES</h2>
-            <ul class="d-flex flex-wrap justify-content-evenly"> <!--display:flex; / justify-content: evenly -->
+
+            <ul class="d-flex flex-wrap justify-content-evenly">
                 <li><span class="badge text-bg-primary">Trabajo en Equipo</span></li>
                 <li><span class="badge text-bg-primary">HTML</span></li>
                 <li><span class="badge text-bg-primary">CSS</span></li>

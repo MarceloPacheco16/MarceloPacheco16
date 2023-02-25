@@ -62,6 +62,11 @@ nav ul{
     text-align: center;
 }
 
+.titulo .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .titulo .row div{
     padding-left: 20px;
     padding-right: 20px;
@@ -151,9 +156,19 @@ nav button:hover{
     font-weight: 500;
 }
 
+/* CONTACTO */
+#contacto i{
+    color: white;
+    font-size: 2rem;
+}
+
 /* EDUCACION */
 #educacion p:first-of-type{
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 600;
+    border-bottom: 4px solid white;
 }
 
 /* OBJETIVO LABORAL */
@@ -161,16 +176,18 @@ nav button:hover{
     font-weight: 500;
 }
 
-/* EXPERIENCIAS */
+/* EXPERIENCIAS  y CURSOS */
 
-#experiencias .btn{
+#experiencias .btn,
+#cursos .btn{
     margin-bottom: 10px;
     font-weight: 500;
     border: 2px solid black;
     background-color: white;
 }
 
-#experiencias .btn:hover{
+#experiencias .btn:hover,
+#cursos .btn:hover{
     background-color: rgb(178, 255, 255);
 }
 /*HABILIDADES*/
